@@ -1,0 +1,127 @@
+
+
+body{
+    
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10% 75% 1fr;
+    grid-template-areas: 
+    " hd hd hd hd"
+    " ft form form . ";
+}
+
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    grid-area: hd;
+}
+
+p{
+    width: 100%;
+    text-align: center;
+}
+#calculate{
+    margin: auto;
+}
+
+.form-container {
+    background-color: rgb(198, 208, 208);
+    width: 350px;
+    height: 550px;
+    border: 1px solid black;
+    margin: auto;
+    grid-area: form;
+}
+
+.list-container{
+    height:auto;
+    width:90%;
+    margin: auto;
+} 
+
+li{
+    font-weight: bold;
+    font: 1.5rem Georgia, Helvetica, sans-serif;
+    list-style: none;
+    padding-top: 8%;
+}
+
+ul{
+    position: relative;
+}
+
+li > input{
+    float:right;
+    clear: both;
+}
+hr{
+    width: 80%;
+    margin-bottom: 0%;
+}
+.disclaimer{
+    height: 120px;
+    text-align: left;
+    padding-left: 7px;
+    margin-top: 0%;
+}
+
+.resources{
+    grid-area: ft;
+}
+
+h4{
+    margin-left: 10%;
+}
+
+a{
+    font: 2rem Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media only screen and (max-width: 414px ) {
+    body{
+        width:auto;
+        grid-template-areas: 
+        " hd hd "
+        " form form"
+        " ft ft";
+    } 
+
+    .re-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly ;
+    }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    .resources{
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 912px) and (min-width:768px) {
+    body{
+        
+        grid-template-rows: 10% 50% 20%;
+        grid-template-areas: 
+        " hd hd hd hd"
+        " ft form form . ";
+        } 
+        
+    .form-container{
+        width: 90%;
+        }
+
+    .re-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly ;
+        }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <title>Expense Calculator</title>
+        
+    </head>
+    <body> 
+        <h1>Budget Calculator</h1>     
+        <div class="form-container">
+            <h2>Monthly Earnings</h2>
+            <p><input type="text" id="monthly-input" placeholder="Per month $"><button class="button" id="calculate">Calculate</button></p>
+            
+            <div class="list-container">
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i> Rent<input type="text" id="result-1">
+                    <li><i class="fas fa-car"></i> Transport<input type="text" id="result-2">
+                    <li><i class="fas fa-hamburger"></i> Food<input type="text" id="result-3">
+                    <li><i class="fas fa-mobile-alt"></i> Essentials<input type="text" id="result-4">
+                    <li><i class="fas fa-cocktail"></i> Self Care<input type="text" id="result-5">
+                    <li><i class="fas fa-plane"></i> Misc<input type="text" id="result-6">
+                    <li><i class="far fa-save"></i> Saving<input type="text" id="result-7">
+                </ul>
+            </div>
+            <hr>
+            <p class="disclaimer">Disclaimer: This list intends to suggest a break down your monthly salary into allocated percentages for the given categories. 
+                The percentages are based on statistics gathered from multiple sources. 
+                Check out the resource links. </p>
+        </div>  
+        <div class="resources">
+            <h4>Resource links</h4>
+            <ul class = re-links>
+                <li> <a href="https://www.nerdwallet.com/article/finance/money/how-much-should-i-spend-on-rent">Nerdwallet.com</a></li>
+                <li><a href="https://www.valuepenguin.com/average-household-budget">valuepenguin.com</a></li>
+                <li><a href="https://www.mymoneycoach.ca/blog/single-person-grocery-budget-tips-for-1#:~:text=The%20average%20food%20budget%20for,budget%20that%20works%20for%20you. ">mymoneycoach.ca</a></li>
+                <li><a href="https://itsallyouboo.com/how-much-should-you-spend-on-self-care/ ">itsallyouboo.com</a></li>
+                <li><a href="https://www.quicken.com/blog/budget-categories/">quicken.com</a></li>
+                <li><a href="https://www.yezminthomas.com/what-percentage-of-your-income-should-go-to-what/#:~:text=monthly%20expenses%3A%20depending%20on%20your,a%20budget%20every%20single%20month. ">yezminthomas.com</a></li>
+            </ul>
+        </div>
+        <script src="/js/script.js"></script>  
+    </body>
+</html>
