@@ -82,7 +82,7 @@ a{
     font: 2rem Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 414px ) {
+@media only screen and (max-width: 414px ) {
     body{
         width:auto;
         grid-template-areas: 
