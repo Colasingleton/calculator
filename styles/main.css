@@ -100,7 +100,7 @@ a{
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 389px) {
     .resources{
         padding-top: 60px;
     }
